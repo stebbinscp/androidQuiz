@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#000"
+    tools:context=".WelcomeFragment" >
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="20"
+        android:paddingTop="15dp"
+        android:text="Welcome to Classics Quiz"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name:"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="#3c3c3c"
+            android:hint="enter your name..."
+            android:textColor="#0C20DA"
+            android:paddingLeft="4dp"
+            android:paddingBottom="4dp"
+            android:textColorHint="#AAA"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.25"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="60
+"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonGreek"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Greek"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonLatin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Latin"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/buttonMixed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Mixed"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/exitButton"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_margin = "8dp"
+        android:layout_width = "match_parent"
+        android:layout_weight="10"
+        android:text="exit" />
+
+</LinearLayout>

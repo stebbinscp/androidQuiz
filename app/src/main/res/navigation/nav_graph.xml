@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.myapplication.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_mixedFragment"
+            app:destination="@id/mixedFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_latinFragment"
+            app:destination="@id/latinFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_greekFragment"
+            app:destination="@id/greekFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mixedFragment"
+        android:name="com.example.myapplication.mixedFragment"
+        android:label="fragment_mixed"
+        tools:layout="@layout/fragment_mixed" >
+        <action
+            android:id="@+id/action_mixedFragment_to_resultMixedFragment"
+            app:destination="@id/resultMixedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/latinFragment"
+        android:name="com.example.myapplication.latinFragment"
+        android:label="fragment_latin"
+        tools:layout="@layout/fragment_latin" >
+        <action
+            android:id="@+id/action_latinFragment_to_resultLatinFragment"
+            app:destination="@id/resultLatinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/greekFragment"
+        android:name="com.example.myapplication.greekFragment"
+        android:label="fragment_greek"
+        tools:layout="@layout/fragment_greek" >
+        <action
+            android:id="@+id/action_greekFragment_to_resultGreekFragment"
+            app:destination="@id/resultGreekFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultGreekFragment"
+        android:name="com.example.myapplication.resultGreekFragment"
+        android:label="fragment_result_greek"
+        tools:layout="@layout/fragment_result_greek" >
+        <action
+            android:id="@+id/action_resultGreekFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_resultGreekFragment_to_greekFragment"
+            app:destination="@id/greekFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultLatinFragment"
+        android:name="com.example.myapplication.resultLatinFragment"
+        android:label="fragment_result_latin"
+        tools:layout="@layout/fragment_result_latin" >
+        <action
+            android:id="@+id/action_resultLatinFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_resultLatinFragment_to_latinFragment"
+            app:destination="@id/latinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultMixedFragment"
+        android:name="com.example.myapplication.resultMixedFragment"
+        android:label="fragment_result_mixed"
+        tools:layout="@layout/fragment_result_mixed" >
+        <action
+            android:id="@+id/action_resultMixedFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_resultMixedFragment_to_mixedFragment"
+            app:destination="@id/mixedFragment" />
+    </fragment>
+</navigation>
