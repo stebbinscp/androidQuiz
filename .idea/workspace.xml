@@ -27,28 +27,40 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8ed4630-3f3b-4636-9ecd-d2c7c2fb79d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/greekFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/greekFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/latinFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/latinFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/mixedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/mixedFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/resultGreekFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/resultGreekFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/resultLatinFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/resultLatinFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/resultMixedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/resultMixedFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_result_greek.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_result_greek.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_result_latin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_result_latin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_result_mixed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_result_mixed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_results.xml" beforeDir="false" />
+    <list default="true" id="f8ed4630-3f3b-4636-9ecd-d2c7c2fb79d7" name="Default Changelist" comment="added cross language contamination logic&#10;added no repeat logic">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/Xtina/.android/avd/Pixel_3a_API_30_x86.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="My Application" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="My Application" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -144,6 +156,14 @@
       <updated>1624980996422</updated>
       <workItem from="1625015011765" duration="193000" />
     </task>
+    <task id="LOCAL-00001" summary="added cross language contamination logic&#10;added no repeat logic">
+      <created>1625020100976</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625020100976</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,55 +179,68 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added cross language contamination logic&#10;added no repeat logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="added cross language contamination logic&#10;added no repeat logic" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1978" y="135" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625015591045">
       <screen x="1280" y="-159" width="1920" height="1080" />
     </state>
     <state x="1978" y="135" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/1280.-159.1920.1080@1280.-159.1920.1080" timestamp="1625015591045" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1625019211313">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1238" height="2" key="GridCell.Tab.0.bottom" timestamp="1625020210895">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.-159.1920.1080@0.0.1280.800" timestamp="1625019211313" />
     <state width="1238" height="30" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.-136.1920.1057@0.23.1280.777" timestamp="1625018771194" />
     <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.-159.1920.1080@1280.-159.1920.1080" timestamp="1625018460512" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1625019211307">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1238" height="2" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1625020210895" />
+    <state width="1238" height="2" key="GridCell.Tab.0.center" timestamp="1625020210894">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800/1280.-159.1920.1080@0.0.1280.800" timestamp="1625019211307" />
     <state width="1238" height="30" key="GridCell.Tab.0.center/0.23.1280.777/1280.-136.1920.1057@0.23.1280.777" timestamp="1625018771183" />
     <state width="1878" height="305" key="GridCell.Tab.0.center/0.23.1280.777/1280.-159.1920.1080@1280.-159.1920.1080" timestamp="1625018460496" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1625019211306">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1238" height="2" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1625020210894" />
+    <state width="1238" height="2" key="GridCell.Tab.0.left" timestamp="1625020210893">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800/1280.-159.1920.1080@0.0.1280.800" timestamp="1625019211306" />
     <state width="1238" height="30" key="GridCell.Tab.0.left/0.23.1280.777/1280.-136.1920.1057@0.23.1280.777" timestamp="1625018771175" />
     <state width="1878" height="305" key="GridCell.Tab.0.left/0.23.1280.777/1280.-159.1920.1080@1280.-159.1920.1080" timestamp="1625018460490" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1625019211311">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1238" height="2" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1625020210893" />
+    <state width="1238" height="2" key="GridCell.Tab.0.right" timestamp="1625020210895">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800/1280.-159.1920.1080@0.0.1280.800" timestamp="1625019211311" />
     <state width="1238" height="30" key="GridCell.Tab.0.right/0.23.1280.777/1280.-136.1920.1057@0.23.1280.777" timestamp="1625018771185" />
     <state width="1878" height="305" key="GridCell.Tab.0.right/0.23.1280.777/1280.-159.1920.1080@1280.-159.1920.1080" timestamp="1625018460508" />
-    <state width="1238" height="212" key="GridCell.Tab.1.bottom" timestamp="1625019240879">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1238" height="2" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1625020210895" />
+    <state width="1238" height="2" key="GridCell.Tab.1.bottom" timestamp="1625020210897">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.bottom/0.0.1280.800/1280.-159.1920.1080@0.0.1280.800" timestamp="1625019240879" />
     <state width="1238" height="212" key="GridCell.Tab.1.bottom/0.23.1280.777/1280.-136.1920.1057@0.23.1280.777" timestamp="1625019050057" />
-    <state width="1238" height="212" key="GridCell.Tab.1.center" timestamp="1625019240874">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1238" height="2" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1625020210897" />
+    <state width="1238" height="2" key="GridCell.Tab.1.center" timestamp="1625020210896">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.center/0.0.1280.800/1280.-159.1920.1080@0.0.1280.800" timestamp="1625019240874" />
     <state width="1238" height="212" key="GridCell.Tab.1.center/0.23.1280.777/1280.-136.1920.1057@0.23.1280.777" timestamp="1625019050048" />
-    <state width="1238" height="212" key="GridCell.Tab.1.left" timestamp="1625019240872">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1238" height="2" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1625020210896" />
+    <state width="1238" height="2" key="GridCell.Tab.1.left" timestamp="1625020210896">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.left/0.0.1280.800/1280.-159.1920.1080@0.0.1280.800" timestamp="1625019240872" />
     <state width="1238" height="212" key="GridCell.Tab.1.left/0.23.1280.777/1280.-136.1920.1057@0.23.1280.777" timestamp="1625019050046" />
-    <state width="1238" height="212" key="GridCell.Tab.1.right" timestamp="1625019240877">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1238" height="2" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1625020210896" />
+    <state width="1238" height="2" key="GridCell.Tab.1.right" timestamp="1625020210897">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.1.right/0.0.1280.800/1280.-159.1920.1080@0.0.1280.800" timestamp="1625019240877" />
     <state width="1238" height="212" key="GridCell.Tab.1.right/0.23.1280.777/1280.-136.1920.1057@0.23.1280.777" timestamp="1625019050054" />
+    <state width="1238" height="2" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1625020210897" />
   </component>
 </project>
