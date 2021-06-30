@@ -102,35 +102,36 @@ public class mixedFragment extends Fragment {
 
     private Question getQuestion() {
         //generate corr answer
-        int randomNum = random.nextInt((0) + 1);
         String[] strAnswers = getRandomWord();
         String englishWord = strAnswers[ENGLISH];
         Question question = new Question(strAnswers[ENGLISH], strAnswers[LATIN], strAnswers[GREEK]);
 
-
         //generates 5 wrong answers
         while (question.getWrongAnswers().size() < 5) {
-            String[] greekWord = getRandomWord();
+            String[] wordRandom = getRandomWord();
 
-            int random01 = random.nextInt((0) + 1);
+            boolean booleanGreek = random.nextBoolean();
 
             //if the one we picked is equal to the answer OR
             //if is not from the same region as the answer OR
             //if we already picked this one
-            if (random01 == 0) {
-                while (greekWord[GREEK].equals(strAnswers[GREEK]) ||
-                        question.getWrongAnswers().contains(strAnswers[GREEK])) {
+            // boolean next bool
+            if (booleanGreek) {
+                while (wordRandom[ENGLISH].equals(strAnswers[ENGLISH]) ||
+                        question.getWrongAnswers().contains(strAnswers[GREEK])
+                || question.getWrongAnswers().contains(strAnswers[LATIN])) {
                     //then we need pick another one
-                    strAnswers = getRandomWord();
+                    wordRandom = getRandomWord();
                 }
-                question.addWrongAnswer(strAnswers[GREEK]);
+                question.addWrongAnswer(wordRandom[GREEK]);
             } else {
-                while (greekWord[LATIN].equals(strAnswers[LATIN]) ||
-                        question.getWrongAnswers().contains(strAnswers[LATIN])) {
+                while (wordRandom[ENGLISH].equals(strAnswers[ENGLISH]) ||
+                        question.getWrongAnswers().contains(strAnswers[LATIN])
+                || question.getWrongAnswers().contains(strAnswers[GREEK])) {
                     //then we need pick another one
                     strAnswers = getRandomWord();
                 }
-                question.addWrongAnswer(strAnswers[LATIN]);
+                question.addWrongAnswer(wordRandom[LATIN]);
 
             }
         }

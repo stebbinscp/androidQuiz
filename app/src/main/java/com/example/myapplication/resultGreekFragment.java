@@ -24,7 +24,7 @@ public class resultGreekFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View containerView =  inflater.inflate(R.layout.fragment_results, container, false);
+        View containerView =  inflater.inflate(R.layout.fragment_result_greek, container, false);
 
 
         anotherQuizButton = containerView.findViewById(R.id.anotherQuizButton);

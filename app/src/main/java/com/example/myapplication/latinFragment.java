@@ -92,7 +92,7 @@ public class latinFragment extends Fragment {
         group.addView(button);
     }
 
-    private String[] getRandomLatinWord(){
+    private String[] getRandomWord() {
         String[] array = getResources().getStringArray(R.array.classic_words);
         int index = random.nextInt(array.length);
         return array[index].split(PIPE);
@@ -101,23 +101,23 @@ public class latinFragment extends Fragment {
 
     private Question getQuestion() {
         //generate corr answer
-        String[] strAnswers = getRandomLatinWord();
+        String[] strAnswers = getRandomWord();
         Question question = new Question(strAnswers[ENGLISH], strAnswers[LATIN], strAnswers[GREEK]);
 
         //generates 5 wrong answers
         while (question.getWrongAnswers().size() < 5) {
-            String[] latinWord = getRandomLatinWord();
+            String[] latinWord = getRandomWord();
 
             //if the one we picked is equal to the answer OR
             //if is not from the same region as the answer OR
             //if we already picked this one
-            while (latinWord[LATIN].equals(strAnswers[LATIN]) ||
+            while (latinWord[ENGLISH].equals(strAnswers[ENGLISH]) |
                     question.getWrongAnswers().contains(strAnswers[LATIN])) {
                 //then we need pick another one
-                strAnswers = getRandomLatinWord();
+                latinWord = getRandomWord();
             }
 
-            question.addWrongAnswer(strAnswers[LATIN]);
+            question.addWrongAnswer(latinWord[LATIN]);
         }
         return question;
     }

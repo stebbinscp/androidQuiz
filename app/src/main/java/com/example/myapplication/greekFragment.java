@@ -92,7 +92,7 @@ public class greekFragment extends Fragment {
         group.addView(button);
     }
 
-    private String[] getRandomGreekWord(){
+    private String[] getRandomWord(){
         String[] array = getResources().getStringArray(R.array.classic_words);
         int index = random.nextInt(array.length);
         return array[index].split(PIPE);
@@ -101,24 +101,24 @@ public class greekFragment extends Fragment {
 
     private Question getQuestion() {
         //generate corr answer
-        String[] strAnswers = getRandomGreekWord();
+        String[] strAnswers = getRandomWord();
         String englishWord = strAnswers[ENGLISH];
         Question question = new Question(strAnswers[ENGLISH], strAnswers[LATIN], strAnswers[GREEK]);
 
         //generates 5 wrong answers
         while (question.getWrongAnswers().size() < 5) {
-            String[] greekWord = getRandomGreekWord();
+            String[] greekWord = getRandomWord();
 
             //if the one we picked is equal to the answer OR
             //if is not from the same region as the answer OR
             //if we already picked this one
-            while (greekWord[GREEK].equals(strAnswers[GREEK]) ||
+            while (greekWord[ENGLISH].equals(englishWord) ||
                     question.getWrongAnswers().contains(strAnswers[GREEK])) {
                 //then we need pick another one
-                strAnswers = getRandomGreekWord();
+                greekWord = getRandomWord();
             }
 
-            question.addWrongAnswer(strAnswers[GREEK]);
+            question.addWrongAnswer(greekWord[GREEK]);
         }
         return question;
     }

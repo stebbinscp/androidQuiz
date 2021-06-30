@@ -69,10 +69,10 @@
 
         <Button
             android:id="@+id/anotherQuizButton"
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="150dp"
             android:layout_marginRight="5dp"
             android:backgroundTint="@color/white"
             android:text="another quiz"
@@ -80,10 +80,10 @@
 
         <Button
             android:id="@+id/resetButton"
-            android:layout_width="150dp"
+            android:layout_width="128dp"
             android:layout_height="100dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="150dp"
             android:layout_marginRight="5dp"
             android:backgroundTint="@color/white"
             android:text="@string/reset"
